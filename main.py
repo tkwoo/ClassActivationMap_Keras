@@ -51,6 +51,9 @@ def main():
     elif flag.mode == 'eval':
         eval_op = predict.predictor(flag)
         eval_op.evaluate()
+    elif flag.mode == 'cam':
+        cam_op = predict.predictor(flag)
+        cam_op.cam()
     else:
         print 'not supported'
 

@@ -66,7 +66,7 @@ def vgg_like(flag):
 
     x = Conv2D(1024, (3,3), activation=None, padding='same', name='conv6')(x)
     x = BatchNormalization()(x)
-    x = Activation('relu')(x)
+    x = Activation('relu', name='last_logit')(x)
     # x = Dropout(0.2)(x)
     x = GlobalAveragePooling2D()(x)
     x = Dense(num_classes, activation='softmax', name='predictions')(x)
