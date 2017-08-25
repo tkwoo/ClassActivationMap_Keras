@@ -34,8 +34,6 @@ checkpoint files,
             ├── weight.xx.h5
             └── ...
 
-You can download ~~CHECKPOINT~~ files in project
-
 To test a model
 
     $ python main.py --mode cam --ckpt_name weight --data_path ./data/validation --batch_size 10
