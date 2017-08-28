@@ -18,11 +18,12 @@ Image classification + CAM with keras
 Input data(only for evaluation)
 
     └── data
-        └── validation
-            └── cat
-                └── xxx.png (name doesn't matter)
-            └── dog    
-                └── xxx.png (name doesn't matter)
+        └── cats_vs_dogs
+            └── validation
+                └── cat
+                    └── xxx.png (name doesn't matter)
+                └── dog    
+                    └── xxx.png (name doesn't matter)
 
 The dataset directory structure is followed to use the Keras DataGen Framework.
 

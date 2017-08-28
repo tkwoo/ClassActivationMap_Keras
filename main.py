@@ -10,7 +10,7 @@ import predict
 
 parser = argparse.ArgumentParser()
 ### training
-parser.add_argument("--data_path", help="training data path", default="./data")
+parser.add_argument("--data_path", help="training data path", default="./data/cats_vs_dogs")
 parser.add_argument("--total_epoch", help="number of epochs", default=10, type=int)
 parser.add_argument("--initial_learning_rate", help="init lr", default=0.007, type=float)
 parser.add_argument("--learning_rate_decay_factor", help="learning rate decay", default=0.5, type=float)
