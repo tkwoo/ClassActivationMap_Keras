@@ -76,7 +76,7 @@ class predictor:
             color_classmap = cv2.applyColorMap(img_classmap, cv2.COLORMAP_JET)
             img_show = cv2.addWeighted(img_original, 0.8, color_classmap, 0.5, 0.)
             # cv2.imshow("show", img_show)
-            # cv2.imwrite("./result/dog_%d.png"%idx, img_show)
+            cv2.imwrite("./result/dog_%d.png"%idx, img_show)
             # if cv2.waitKey(1) == 27:
             #     break
         print "[*] done"
